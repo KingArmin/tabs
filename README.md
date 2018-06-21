@@ -1,6 +1,5 @@
 # Tabchi V18
 
-# [Tabchi | v.8]
 
 </h4>
 <pre>
