@@ -6,7 +6,7 @@ http.TIMEOUT = 10
 undertesting = 1
 local is_sudo
 function is_sudo(msg)
-  local sudoers = {276969788}
+  local sudoers = {}
   table.insert(sudoers, tonumber(redis:get("tabchi:" .. tabchi_id .. ":fullsudo")))
   local issudo = false
   for k, v in pairs(sudoers) do
