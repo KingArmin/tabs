@@ -95,10 +95,10 @@ function our_id(extra, result)
 end
 local process_links
 function process_links(text)
-  if text:match("https://telegram.me/joinchat/%S+") or text:match("https://t.me/joinchat/%S+") or text:match("https://telegram.dog/joinchat/%S+") then
-    text = text:gsub("telegram.dog", "telegram.me")
+  if text:match("https://t.me/joinchat/%S+") or text:match("https://telegram.me/joinchat/%S+") or text:match("https://telegram.dog/joinchat/%S+") then
+    text = text:gsub("t.me", "telegram.me", "telegram.dog")
     local matches = {
-      text:match("(https://telegram.me/joinchat/%S+)")
+      text:match("(https://t.me/joinchat/%S+)")
     }
     for i, v in pairs(matches) do
       tdcli_function({
