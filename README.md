@@ -1,53 +1,56 @@
-# Tabchi V4.3 By [@To_My_Amigos](Https://T.Me/To_My_Amigos)
+# Tabchi V18
 
-TG-CLI Based Broadcasting Bot.
+# [Tabchi | v.8]
 
-## راهنمای نصب :
+</h4>
+<pre>
+<span>sudo apt-get update; sudo apt-get upgrade; sudo apt-get install tmux; sudo apt-get install luarocks; sudo apt-get install screen; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev; sudo apt-get update; sudo apt-get install; sudo apt-get install upstart-sysv;
+</span>
+</pre>
+<hr>
 
-git clone https://Github.com/kia-pashang/Tabchi.git
+* * *
 
-cd Tabchi
+# Install
 
+```sh
+git clone https://github.com/KingArmin/tabs
+cd tabs
 chmod +x install.sh
-
 ./install.sh
 
-## نصب تمام شد
-
-## ران کردن ربات به صورت پیشفرض
-
-cd Tabchi
-
+```
+* * *
+## Create BOT [Auto]
+```
+cd tabs
 lua creator.lua
-
-بعد ایدی سودو ست کنید مثلا : 353581089
 
 screen ./tabchi-0.sh
 
-شماره ست کنید و حالشو ببرین
+```
+## Create BOT [Menual]
 
-## ران کردن بات به صورت دستی
-
-cd Tabchi
-
+```sh
+cd tabs
 lua manual-creator.lua
 
-ایدی تبچی ست کنید مثلا : 5
+screen ./tabchi-[NUM].sh
 
-بعدش ایدی سودو بدین مثلا : 353581089
+```
+* * *
+## AutoLaunch
+```sh
 
-screen ./tabchi-5.sh
-
-شماره ست کنید و حالشو ببرین
-
-# استفاده از انتی کرش
-
-وقتی شماره و همه چی رو ست کردین اول دستور اسکرین استفاده کنید وقتی ربات خاموش شد مراحل زیر رو انجام بدین
-
-cd Tabchi
-
+cd tabchi
+./bot fix
+./bot update
+killall tmux
 killall bash
+killall nohup
+killall screen
+tmux ./anticrash.sh
 
-./anticrash.sh
 
-عمرا ربات اف بشه :)
+```
+***
