@@ -46,7 +46,7 @@ killall tmux
 killall bash
 killall nohup
 killall screen
-tmux ./anticrash.sh
+./anticrash.sh
 
 
 ```
