@@ -41,9 +41,7 @@ screen ./tabchi-[NUM].sh
 ## AutoLaunch
 ```sh
 
-cd tabchi
-./bot fix
-./bot update
+cd tabs
 killall tmux
 killall bash
 killall nohup
